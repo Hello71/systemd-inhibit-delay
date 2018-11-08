@@ -1,0 +1,9 @@
+Basic systemd inhibit delay program.
+
+Usage: systemd-inhibit-delay WHAT COMMAND [ARGS...]
+
+    systemd-inhibit-delay sleep swaylock -f
+
+Note that the command *must exit when done*, as only then will the requested
+operation continue. If you put "swaylock" for example, your system will
+unnecessarily wait 5 seconds before sleeping (in the default configuration).
